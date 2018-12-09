@@ -11,7 +11,7 @@ class SensorTest {
 
 	@Test
 	void testCompareObjects() {
-		//testcase to handle the standard data from sensors
+		//testcase to check the standard data from sensors
 		SensorData rgbd1 = new SensorData("knife", 1, 0.99);
 		SensorData rgb1 = new SensorData("knife", 1, 0.95);
 		SensorData rgbd11 = new SensorData("knife", 1 , 0.90);
@@ -19,7 +19,7 @@ class SensorTest {
 		Assert.assertEquals(rgbd1, rgbd1.comparePercentageSurety(rgb1,rgbd11,rgb11));	
 		System.out.println("Test 1 passed");
 		
-		//testcase to handle data different itemLabel
+		//testcase to check different itemLabel
 		SensorData rgbd2 = new SensorData("scissor", 2, 0.65);
 		SensorData rgb2 = new SensorData("spoon", 4, 0.99);
 		SensorData rgbd22 = new SensorData("spoon", 2 , 0.51);
@@ -28,7 +28,7 @@ class SensorTest {
 		temporaryObject.itemType.equals(rgbd2.comparePercentageSurety(rgb2,rgbd22,rgb22));
 		System.out.println("Test 2 passed");
 		
-		//testcase to handle anomalous itemType classification 
+		//testcase to check anomalous itemType classification 
 		SensorData rgbd3 = new SensorData("spoon", 3, 0.33);
 		SensorData rgb3 = new SensorData("fork", 3, 0.99);
 		SensorData rgbd33 = new SensorData("knife", 3, 0.99);
@@ -36,7 +36,7 @@ class SensorTest {
 		Assert.assertEquals(rgb3, rgbd3.comparePercentageSurety(rgb3,rgbd33,rgb33));
 		System.out.println("Test 3 passed");
 		
-		//testcase to handle empty list of objects 
+		//testcase to check empty list of objects 
 		SensorData rgbd4 = new SensorData(" ", 0, 0);
 		SensorData rgb4 = new SensorData(" ",0,0);
 		SensorData rgbd44 = new SensorData(" ",0,0);
@@ -45,7 +45,7 @@ class SensorTest {
 		"Insufficient Data".equals(rgb4.comparePercentageSurety(rgbd4,rgbd44,rgb44));
 		System.out.println("Test 4 passed");
 		
-		//testcase to handle different case of itemType
+		//testcase to check different case of itemType
 		SensorData rgbd5 = new SensorData("spoon", 3, 0.33);
 		SensorData rgb5 = new SensorData("SPOON", 3, 0.33);
 		SensorData rgbd55 = new SensorData("spoon", 3, 0.33);

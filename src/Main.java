@@ -62,6 +62,7 @@ public class Main {
 		sensor2Algorithm2.add(rgbd4);
 		sensor2Algorithm2.add(rgbd5);
 		
+		
 		ArrayList<SensorData> decision = new ArrayList<SensorData>(20);
 		
 		

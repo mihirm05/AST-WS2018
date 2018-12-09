@@ -30,6 +30,7 @@ public class SensorData{
 		
 		double maximumPercentageSurety = Collections.max(percentageSuretyList);
 		
+		
 		SensorData temporaryObject = new SensorData(" This is a garbage Value ", 0, 0);
 		if ((this.itemLabel == sensorData1.itemLabel) && (this.itemLabel == sensorData2.itemLabel) && (this.itemLabel == sensorData3.itemLabel)){
 			if (this.percentageSurety > maximumPercentageSurety){
