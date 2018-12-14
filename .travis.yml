@@ -3,9 +3,4 @@ jdk:
   - oraclejdk8
 script: 
   - ant build 
-install:
-  - pip install codecov
-script:
-  - coverage run src/ast/objectListMerger/SensorTest.java
-after_success:
-  - codecov
+
