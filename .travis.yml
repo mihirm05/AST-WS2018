@@ -3,9 +3,12 @@ jdk:
   - oraclejdk8
 script: 
   - ant build 
-install:
-  - pip install codecov
-script:
-  - coverage run src/ast/objectListMerger/SensorTest.java
+ 
+ 
+sudo: false # faster builds
+before_install:
+ - chmod +x ./gradlew
+ - jdk_switcher use oraclejdk8
+
 after_success:
-  - codecov
+- bash <(curl -s https://codecov.io/bash)
