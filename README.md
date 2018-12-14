@@ -35,6 +35,9 @@ Testing output would <i>assert</i> whether the output is true for a given expect
   * SensorData.java 
   * SensorTest.java
   
+  
++ **Continuous Integration** - [![Build Status](https://travis-ci.com/mihirm05/AST-WS2018.svg?branch=dev)](https://travis-ci.com/mihirm05/AST-WS2018)  
+
 ### Team: 
   * Mihir Mulye
   * Raghuvir Shirodkar
