@@ -37,7 +37,7 @@ Testing output would <i>assert</i> whether the output is true for a given expect
   
   
 + **Continuous Integration** - [![Build Status](https://travis-ci.com/mihirm05/AST-WS2018.svg?branch=dev)](https://travis-ci.com/mihirm05/AST-WS2018)  
-+ **Documentation** - [![Test report](https://img.shields.io/badge/test%20report-master-blue.svg?style=flat)]
++ **Documentation** - [!Test report(https://img.shields.io/badge/test%20report-master-blue.svg?style=flat)]
 
 ### Team: 
   * Mihir Mulye
