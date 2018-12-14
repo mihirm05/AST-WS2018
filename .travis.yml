@@ -5,10 +5,4 @@ script:
   - ant build 
  
  
-sudo: false # faster builds
-before_install:
- - chmod +x ./gradlew
- - jdk_switcher use oraclejdk8
 
-after_success:
-- bash <(curl -s https://codecov.io/bash)
