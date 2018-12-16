@@ -45,7 +45,7 @@ Testing output would <i>assert</i> whether the output is true for a given expect
 Travis is a hosted, continuous integration service used to build and test projects at GitHub. 
 <br><br>
 ### How to utilize the service and instructions to use it? 
-Basics of using the service are very nominal, namely you should have a GitHub account and Owner permissions for the project being hosted on the GitHub. 
+Basics requirements of using the service are very nominal, namely you should have a GitHub account and Owner permissions for the project being hosted on the GitHub. 
 Following are the steps to get registered for the service- 
 1. Visit the link and signup with GitHub account. 
 2. Accept the authorization and you will be redirected to the GitHub.
