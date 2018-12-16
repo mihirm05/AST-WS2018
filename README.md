@@ -1,4 +1,4 @@
-# Hochschule Bonn-Rhein-Sieg
+﻿# Hochschule Bonn-Rhein-Sieg
 ## AST - WS 2018 Project : Object List Merger
 
 ### Description:
@@ -38,7 +38,55 @@ Testing output would <i>assert</i> whether the output is true for a given expect
   
 + **Continuous Integration** - [![Build Status](https://travis-ci.com/mihirm05/AST-WS2018.svg?branch=dev)](https://travis-ci.com/mihirm05/AST-WS2018)  
 + **Code Coverage** - [![codecov](https://codecov.io/gh/mihirm05/AST-WS2018/branch/master/graph/badge.svg)](https://travis-ci.com/mihirm05/AST-WS2018)  
-+ **Documentation** - ![Test report](https://img.shields.io/badge/test%20report-master-blue.svg?style=flat)
++ **Documentation** - [![Test report](https://img.shields.io/badge/test%20report-master-blue.svg?style=flat)](https://github.com/mihirm05/AST-WS2018/blob/dev/README.md)
+<br><br>
+
+### What “Travis” is about? 
+Travis is a hosted, continuous integration service used to build and test projects at GitHub. 
+<br><br>
+### How to utilize the service and instructions to use it? 
+Basics requirements of using the service are very nominal, namely you should have a GitHub account and Owner permissions for the project being hosted on the GitHub. 
+Following are the steps to get registered for the service- 
+1. Visit the link and signup with GitHub account. 
+2. Accept the authorization and you will be redirected to the GitHub.
+3. Select “Activate” and select the repositories you want to use with Travis CI.
+4. Create a .travis.yml file in the repository you want to integrate. Since we have used Java for coding the task we have included the following script in our .yml file- <br>
+
+<b>Language: java <br>
+   jdk: -oraclejdk8 <br>
+   script: -ant build </b>
+   
+5. Add, commit and push the file to the repository and trigger the Travis Build.
+
+### How to add badges to the README.md file? 
+After adding the repository to the Travis CI and triggering the build, we get the result whether the build is successful or a failure. The result is displayed via a badge on the page itself. 
+To add that badge to the README.md of our GitHub, add the following command on the README.md file 
+
++ **Continuous Integration** - [![Build Status](badge url)](the link where the badge leads to on clicking) 
+
+The result looks as shown below- 
+
++ **Continuous Integration** - [![Build Status](https://travis-ci.com/mihirm05/AST-WS2018.svg?branch=dev)](https://travis-ci.com/mihirm05/AST-WS2018)  
+
+To add the codecov badge on the README.md we need to follow a certain different approach. This time we need to make change to the .yml file again. <br><br>
+Following are the additions which we made to the .yml file- <br><br>
+<b>after_success: <br>
+ - bash <(curl -s https://codecov.io/bash)
+env: <br>
+ global: <br>
+ - CODECOV_TOKEN="5cb96507-96ce-496c-a034-6a9383db4a84" </b>
+
+Once, the coverage run completes, we added the badge by adding the following line to the README.md <br>
+
++ **Code Coverage** - [![codecov](badge url)](the link where the badge leads to on clicking) 
+
+The result looks as shown below- 
+
++ **Code Coverage** - [![codecov](https://codecov.io/gh/mihirm05/AST-WS2018/branch/master/graph/badge.svg)](https://travis-ci.com/mihirm05/AST-WS2018)
+
+References- <br>
+[1] - https://en.wikipedia.org/wiki/Travis_CI   <br>
+[2] - https://docs.travis-ci.com/user/tutorial/
 
 
 
