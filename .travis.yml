@@ -9,3 +9,7 @@ after_success:
 env:
   global:
     - CODECOV_TOKEN="5cb96507-96ce-496c-a034-6a9383db4a84"
+
+
+[![codecov](https://codecov.io/gh/mihirm05/AST-WS2018/branch/master/graph/badge.svg)](https://codecov.io/gh/mihirm05/AST-WS2018)
+
