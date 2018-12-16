@@ -60,15 +60,15 @@ script: -ant build
 After adding the repository to the Travis CI and triggering the build, we get the result whether the build is successful or a failure. The result is displayed via a badge on the page itself. 
 To add that badge to the README.md of our GitHub, add the following command on the README.md file <br>
 <!---
-**Continuous Integration** - [![Build Status](https://travis-ci.com/mihirm05/AST-WS2018.svg?branch=dev)](https://travis-ci.com/mihirm05/AST-WS2018) -->
+[![Build Status](https://travis-ci.com/mihirm05/AST-WS2018.svg?branch=dev)](https://travis-ci.com/mihirm05/AST-WS2018) -->
 <br> 
 To add the codecov badge on the README.md we need to follow a certain different approach. This time we need to make change to the .yml file again. <br>
 Following are the additions which we made to the .yml file- 
 after_success: <br>
  - bash <(curl -s https://codecov.io/bash)
-env:
- global:
-    - CODECOV_TOKEN="5cb96507-96ce-496c-a034-6a9383db4a84"
+env: <br>
+ global: <br>
+    - CODECOV_TOKEN="5cb96507-96ce-496c-a034-6a9383db4a84" <br>
 <!---
 [![codecov](https://codecov.io/gh/mihirm05/AST-WS2018/branch/master/graph/badge.svg)](https://codecov.io/gh/mihirm05/AST-WS2018)-->
 <br>
