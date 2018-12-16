@@ -62,6 +62,8 @@ Following are the steps to get registered for the service-
 After adding the repository to the Travis CI and triggering the build, we get the result whether the build is successful or a failure. The result is displayed via a badge on the page itself. 
 To add that badge to the README.md of our GitHub, add the following command on the README.md file 
 
++ **Continuous Integration** - [![Build Status](image url)](the link where the image leads to on click) 
+
 + **Continuous Integration** - [![Build Status](https://travis-ci.com/mihirm05/AST-WS2018.svg?branch=dev)](https://travis-ci.com/mihirm05/AST-WS2018)  
 
 To add the codecov badge on the README.md we need to follow a certain different approach. This time we need to make change to the .yml file again. <br><br>
