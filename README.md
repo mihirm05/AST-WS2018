@@ -70,7 +70,7 @@ env: <br>
  global: <br>
     - CODECOV_TOKEN="5cb96507-96ce-496c-a034-6a9383db4a84" 
 
-Once, the coverage run completes, we added the badge by adding the following line to the README.md 
+Once, the coverage run completes, we added the badge by adding the following line to the README.md <br>
 +**Code Coverage** - ![codecov](https://codecov.io/gh/mihirm05/AST-WS2018/branch/master/graph/badge.svg)
 
 References- <br>
