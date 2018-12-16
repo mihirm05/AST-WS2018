@@ -50,10 +50,11 @@ Following are the steps to get registered for the service-
 1. Visit the link and signup with GitHub account. 
 2. Accept the authorization and you will be redirected to the GitHub.
 3. Select “Activate” and select the repositories you want to use with Travis CI.
-4. Create a .travis.yml file in the repository you want to integrate. Since we have used Java for coding the task we have included the following script in our .yml file- 
-Language: java
-jdk: -oraclejdk8
-script: -ant build
+4. Create a .travis.yml file in the repository you want to integrate. Since we have used Java for coding the task we have included the following script in our .yml file- <br>
+
+<b>Language: java <br>
+   jdk: -oraclejdk8 <br>
+   script: -ant build </b><br>
 5. Add, commit and push the file to the repository and trigger the Travis Build.
 
 ### How to add badges to the README.md file? 
@@ -68,7 +69,7 @@ Following are the additions which we made to the .yml file- <br><br>
  - bash <(curl -s https://codecov.io/bash)
 env: <br>
  global: <br>
-    - CODECOV_TOKEN="5cb96507-96ce-496c-a034-6a9383db4a84" </b>
+ - CODECOV_TOKEN="5cb96507-96ce-496c-a034-6a9383db4a84" </b>
 
 Once, the coverage run completes, we added the badge by adding the following line to the README.md <br>
 + **Code Coverage** - [![codecov](https://codecov.io/gh/mihirm05/AST-WS2018/branch/master/graph/badge.svg)](https://travis-ci.com/mihirm05/AST-WS2018)
