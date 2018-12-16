@@ -41,10 +41,10 @@ Testing output would <i>assert</i> whether the output is true for a given expect
 + **Documentation** - ![Test report](https://img.shields.io/badge/test%20report-master-blue.svg?style=flat)
 <br><br>
 
-###What “Travis” is about? 
+### What “Travis” is about? 
 Travis is a hosted, continuous integration service used to build and test projects at GitHub. 
 <br><br>
-###How to utilize the service and instructions to use it? 
+### How to utilize the service and instructions to use it? 
 Basics of using the service are very nominal, namely you should have a GitHub account and Owner permissions for the project being hosted on the GitHub. 
 Following are the steps to get registered for the service- 
 1. Visit the link and signup with GitHub account. 
@@ -56,7 +56,7 @@ jdk: -oraclejdk8
 script: -ant build
 5. Add, commit and push the file to the repository and trigger the Travis Build.
 
-How to add badges to the README.md file? 
+### How to add badges to the README.md file? 
 After adding the repository to the Travis CI and triggering the build, we get the result whether the build is successful or a failure. It is displayed via a badge on the page itself. 
 To add that badge to the README.md of out GitHub, add the following command on the README.md file 
 + **Continuous Integration** - [![Build Status](https://travis-ci.com/mihirm05/AST-WS2018.svg?branch=dev)](https://travis-ci.com/mihirm05/AST-WS2018)  
