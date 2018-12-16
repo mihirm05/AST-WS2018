@@ -54,7 +54,8 @@ Following are the steps to get registered for the service-
 
 <b>Language: java <br>
    jdk: -oraclejdk8 <br>
-   script: -ant build </b><br>
+   script: -ant build </b>
+   
 5. Add, commit and push the file to the repository and trigger the Travis Build.
 
 ### How to add badges to the README.md file? 
