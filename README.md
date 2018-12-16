@@ -73,7 +73,7 @@ Once, the coverage run completes, we added the badge by adding the following lin
 + **Code Coverage** - ![codecov](https://codecov.io/gh/mihirm05/AST-WS2018/branch/master/graph/badge.svg)
 
 References- 
-[1] - https://en.wikipedia.org/wiki/Travis_CI
+[1] - https://en.wikipedia.org/wiki/Travis_CI   <br>
 [2] - https://docs.travis-ci.com/user/tutorial/
 
 
