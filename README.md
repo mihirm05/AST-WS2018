@@ -79,6 +79,7 @@ env: <br>
 Once, the coverage run completes, we added the badge by adding the following line to the README.md <br>
 
 + **Code Coverage** - [![codecov](badge url)](the link where the badge leads to on clicking) 
+
 The result looks as shown below- 
 
 + **Code Coverage** - [![codecov](https://codecov.io/gh/mihirm05/AST-WS2018/branch/master/graph/badge.svg)](https://travis-ci.com/mihirm05/AST-WS2018)
