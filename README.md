@@ -64,11 +64,11 @@ To add that badge to the README.md of our GitHub, add the following command on t
 
 To add the codecov badge on the README.md we need to follow a certain different approach. This time we need to make change to the .yml file again. <br><br>
 Following are the additions which we made to the .yml file- <br><br>
-after_success: <br>
+<b>after_success: <br>
  - bash <(curl -s https://codecov.io/bash)
 env: <br>
  global: <br>
-    - CODECOV_TOKEN="5cb96507-96ce-496c-a034-6a9383db4a84" 
+    - CODECOV_TOKEN="5cb96507-96ce-496c-a034-6a9383db4a84" </b>
 
 Once, the coverage run completes, we added the badge by adding the following line to the README.md <br>
 + **Code Coverage** - [![codecov](https://codecov.io/gh/mihirm05/AST-WS2018/branch/master/graph/badge.svg)](https://travis-ci.com/mihirm05/AST-WS2018)
