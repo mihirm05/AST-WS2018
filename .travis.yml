@@ -2,7 +2,7 @@ language: java
 jdk:
   - oraclejdk8
 script: 
-  - ant build 
+  - mvn test 
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
@@ -11,5 +11,4 @@ env:
     - CODECOV_TOKEN="5cb96507-96ce-496c-a034-6a9383db4a84"
 
 
-[![codecov](https://codecov.io/gh/mihirm05/AST-WS2018/branch/master/graph/badge.svg)](https://codecov.io/gh/mihirm05/AST-WS2018)
 
